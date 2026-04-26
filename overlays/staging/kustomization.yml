@@ -1,0 +1,20 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: staging          # ← khác base
+
+resources:
+  - ../../base              # ← kế thừa toàn bộ base
+
+images:
+  - name: ghcr.io/your-username/my-app
+    newTag: "latest"        # ← CI sẽ tự cập nhật cái này
+
+patches:
+  - patch: |-
+      - op: replace
+        path: /spec/replicas
+        value: 1            # ← staging chỉ cần 1 replica
+    target:
+      kind: Deployment
+      name: my-app
