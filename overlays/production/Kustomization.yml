@@ -7,7 +7,7 @@ resources:
   - ../../base
 
 images:
-  - name: ghcr.io/your-username/my-app
+  - name: ghcr.io/whtbl3/my-app
     newTag: "1.0.0"         # ← chỉ update khi có release chủ đích
 
 patches:

@@ -7,7 +7,7 @@ resources:
   - ../../base              # ← kế thừa toàn bộ base
 
 images:
-  - name: ghcr.io/your-username/my-app
+  - name: ghcr.io/whtbl3/my-app
     newTag: "latest"        # ← CI sẽ tự cập nhật cái này
 
 patches:
