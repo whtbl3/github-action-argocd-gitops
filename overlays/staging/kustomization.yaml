@@ -5,4 +5,4 @@ resources:
   - ../../base
 images:
   - name: ghcr.io/whtbl3/my-app
-    newTag: "a1e991b3162354eba7f8c1fc8ed4547feea23b8c"
+    newTag: "91e975f64547384f9e4c4c658cc78a4e7622fb37"
