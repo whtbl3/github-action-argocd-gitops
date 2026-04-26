@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-app             # tên chung, overlay sẽ không đổi
+  name: my-app
 spec:
-  replicas: 1              # mặc định, overlay có thể override
+  replicas: 1
   selector:
     matchLabels:
       app: my-app
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: my-app
-          image: nginx:latest  # overlay sẽ đổi tag
+          image: ghcr.io/whtbl3/github-action-argocd-app:latest  # ← đúng tên image thật
           ports:
             - containerPort: 8080
