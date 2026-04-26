@@ -5,4 +5,4 @@ resources:
   - ../../base
 images:
   - name: ghcr.io/whtbl3/github-action-argocd-app   # ← khớp với base
-    newTag: "latest"                                  # ← CI sẽ thay dòng này
+    newTag: "0b68163b454570d06918087620936bcb13ccb17a"
